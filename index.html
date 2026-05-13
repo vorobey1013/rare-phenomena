@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная | Редкие небесные явления</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Дополнительные стили для картинок на главной */
+        .category-icon {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">🌌</div>
+                <div><span>Редкие</span> небесные явления</div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="phenomena.html">Явления</a></li>
+                    <li><a href="months.html">Месяцы</a></li>
+                    <li><a href="calendars.html">Календари</a></li>
+                    <li><a href="about.html">О сайте</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h1>Не пропустите чудо на небе</h1>
+            <p><strong>Редкие небесные явления</strong> — это проект, который помогает обычным людям увидеть то, что происходит раз в годы или десятилетия. Календарь с QR-кодами + сайт-справочник: сканируйте, читайте инструкции и наблюдайте.</p>
+            <a href="phenomena.html" class="btn">Смотреть все явления →</a>
+        </section>
+
+        <section>
+            <h2>Что вас ждёт в этом году?</h2>
+            <div class="phenomena-gallery" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.2rem;">
+                
+                <div class="phenomena-card" style="padding: 1rem; text-align: center;">
+                    <img src="images/categories/eclipses.jpg" alt="Затмения" class="category-icon">
+                    <h3>Затмения</h3>
+                    <p style="font-size: 0.9rem;">Солнечные и лунные затмения — одни из самых впечатляющих небесных спектаклей.</p>
+                </div>
+                
+                <div class="phenomena-card" style="padding: 1rem; text-align: center;">
+                    <img src="images/categories/comets.jpg" alt="Кометы" class="category-icon">
+                    <h3>Кометы</h3>
+                    <p style="font-size: 0.9rem;">Яркие кометы с длинными хвостами появляются раз в несколько лет.</p>
+                </div>
+                
+                <div class="phenomena-card" style="padding: 1rem; text-align: center;">
+                    <img src="images/categories/meteor-showers.jpg" alt="Звездопады" class="category-icon">
+                    <h3>Звездопады</h3>
+                    <p style="font-size: 0.9rem;">Метеорные потоки дарят десятки "падающих звёзд" в час.</p>
+                </div>
+                
+                <div class="phenomena-card" style="padding: 1rem; text-align: center;">
+                    <img src="images/categories/planet-parades.jpg" alt="Парады планет" class="category-icon">
+                    <h3>Парады планет</h3>
+                    <p style="font-size: 0.9rem;">Несколько планет выстраиваются в одну линию на вечернем небе.</p>
+                </div>
+                
+                <div class="phenomena-card" style="padding: 1rem; text-align: center;">
+                    <img src="images/categories/sprites.jpg" alt="Спрайты" class="category-icon">
+                    <h3>Спрайты</h3>
+                    <p style="font-size: 0.9rem;">Редчайшие электрические разряды над грозами.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Как пользоваться календарём?</h2>
+            <ol style="margin-left: 1.5rem; margin-top: 1rem;">
+                <li>Посмотрите на календарь — найдите значок ★ рядом с датой события.</li>
+                <li>Отсканируйте QR-код под нужным месяцем камерой телефона.</li>
+                <li>Вы перейдёте на страницу этого месяца с подробной инструкцией.</li>
+                <li>Узнайте точное время, куда смотреть и нужен ли бинокль.</li>
+                <li>Выйдите на улицу за 15–20 минут до события и наблюдайте!</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>📅 Где взять календарь?</h2>
+            <p>Скачать печатную версию календаря (обе версии: 6 листов или постер на год) и инструкцию можно на специальной странице.</p>
+            <p><a href="calendars.html" style="color: #7aa2c4; font-size: 1.1rem; text-decoration: underline;">→ Перейти в раздел «Календари» ←</a></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>🌠 Проект "Редкие небесные явления"</p>
+    </footer>
+</body>
+</html>

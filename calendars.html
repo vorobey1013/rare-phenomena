@@ -27,53 +27,149 @@
 
     <main>
         <h1>Скачать календарь</h1>
-        <p>Выберите версию календаря, которая вам подходит. Все файлы в формате PDF — распечатайте на обычном принтере.</p>
+        <p>Выберите версию календаря, которая вам подходит.</p>
 
+        <!-- ВЕРСИЯ 1 (ZIP с 6 страницами) -->
         <div class="download-section">
-            <h2>📅 Версия 1 — Полная (6 листов)</h2>
-            <p>На каждом листе — два месяца. Всего 12 месяцев на 6 листах. Под каждым месяцем — QR-код с подробной инструкцией.</p>
-            <p><strong>Для кого:</strong> Кто любит перелистывать страницы и вешать новый лист каждый месяц.</p>
-            <a href="downloads/calendar-version1.pdf" class="btn" download>⬇️ Скачать PDF (Версия 1, 6 листов)</a>
+            <h2>📦 Версия 1 — Полная (6 страниц)</h2>
+            <p><strong>Что внутри:</strong> ZIP-архив с 6 изображениями (JPEG). Каждый файл — один лист с двумя месяцами. Всего 12 месяцев. На каждом из 6 листов в правом нижнем углу общий QR-код.</p>
+            <p><strong>Для кого:</strong> Кто хочет распечатать выборочно или вставить в документ/презентацию.</p>
+            <a href="downloads/version1/calendar-pages.zip" class="btn" download>⬇️ Скачать ZIP (6 страниц)</a>
+            <p style="margin-top: 0.8rem; font-size: 0.85rem;">В архиве: page1.jpg (январь-февраль), page2.jpg (март-апрель), page3.jpg (май-июнь), page4.jpg (июль-август), page5.jpg (сентябрь-октябрь), page6.jpg (ноябрь-декабрь)</p>
         </div>
 
+        <!-- ВЕРСИЯ 2 (постер на весь год) с превью и полноэкранным режимом -->
         <div class="download-section">
-            <h2>🖼️ Версия 2 — Компактная (постер на весь год)</h2>
-            <p>Один большой лист с календарём на все 12 месяцев. Есть общий QR-код и маленькие коды под каждым месяцем.</p>
-            <p><strong>Для кого:</strong> Кто хочет видеть весь год сразу. Удобно повесить над рабочим столом.</p>
-            <a href="downloads/calendar-version2.pdf" class="btn" download>⬇️ Скачать PDF (Версия 2, постер)</a>
+            <h2>🖼️ Версия 2 — Плакат (весь год на одном листе)</h2>
+            <p><strong>Что внутри:</strong> JPG-файл (постер). На одном листе — все 12 месяцев. В правом нижнем углу общий QR-код.</p>
+            
+            <!-- Превью календаря с иконкой полноэкранного режима -->
+            <div style="margin: 1.2rem auto; max-width: 600px; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.3); position: relative;">
+                <img src="downloads/poster.jpg" alt="Календарь редких небесных явлений 2027" style="width: 100%; height: auto; display: block;">
+                <div style="position: absolute; top: 10px; right: 10px; background: rgba(0,0,0,0.6); border-radius: 30px; padding: 5px 12px; cursor: pointer; color: white; font-size: 14px;" class="fullscreen-icon" onclick="openFullscreen()">
+                    🔍 На весь экран
+                </div>
+            </div>
+            <p style="font-size: 0.8rem; margin-bottom: 1rem;">📌 Нажмите на кнопку ниже, чтобы скачать изображение в полном размере.</p>
+            
+            <p><strong>Для кого:</strong> Кто хочет видеть весь год сразу. Удобно повесить над рабочим столом или на холодильник.</p>
+            <a href="downloads/poster.jpg" class="btn" download>⬇️ Скачать плакат (JPG)</a>
         </div>
 
+        <!-- ИНСТРУКЦИЯ -->
         <div class="download-section">
             <h2>📖 Инструкция (отдельный листок)</h2>
             <p>Короткая инструкция на одном листе: как пользоваться календарём, как сканировать QR-код, куда смотреть.</p>
-            <p>Входит в комплект к обеим версиям. Распечатайте и храните рядом с календарём.</p>
-            <a href="downloads/instruction.pdf" class="btn btn-outline" download>⬇️ Скачать инструкцию (PDF)</a>
+            <a href="downloads/instruction.jpg" class="btn btn-outline" download>⬇️ Скачать инструкцию</a>
         </div>
 
+        <!-- КАК РАСПЕЧАТАТЬ -->
         <div class="download-section" style="background: rgba(100,130,180,0.1);">
             <h3>🖨️ Как распечатать календарь?</h3>
             <ol style="text-align: left; max-width: 500px; margin: 1rem auto;">
-                <li>Скачайте PDF-файл выбранной версии.</li>
-                <li>Откройте файл.</li>
+                <li>Скачайте ZIP-архив нужной версии и распакуйте его.</li>
+                <li>Откройте JPG-файлы на компьютере.</li>
                 <li>Распечатайте, вырежьте по линиям (если нужно) и повесьте на стену.</li>
             </ol>
         </div>
 
+        <!-- КАК РАБОТАЮТ QR-КОДЫ -->
         <div style="margin-top: 2rem; padding: 1rem; background: rgba(100,130,180,0.05); border-radius: 15px;">
             <h3 style="color: #7aa2c4;">📱 Как работают QR-коды?</h3>
-            <p>Каждый QR-код на календаре ведёт на определённую страницу нашего сайта:</p>
+            <p>QR-код на календаре ведёт на определённую страницу нашего сайта:</p>
             <ul style="margin-left: 1.5rem;">
-                <li>Код под январем → <strong>months.html#january</strong></li>
-                <li>Код под февралем → <strong>months.html#february</strong></li>
-                <li>... и так для всех 12 месяцев</li>
                 <li>Общий QR-код на постере → главная страница</li>
             </ul>
-            <p>Просто наведите камеру телефона на квадратик — ссылка откроется автоматически.</p>
+            <p>Просто наведите камеру телефона на квадратик — ссылка откроется автоматиicamente.</p>
         </div>
     </main>
 
     <footer>
         <p>🌠 Проект "Редкие небесные явления"</p>
     </footer>
+
+        <!-- ПОЛНОЭКРАННОЕ МОДАЛЬНОЕ ОКНО С ЗУМОМ -->
+    <div id="fullscreenModal" class="modal-fullscreen" onclick="closeFullscreenOnBackground(event)">
+        <button class="close-btn" onclick="closeFullscreen()">✕</button>
+        
+        <!-- Контейнер для изображения с зумом -->
+        <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; overflow: auto;">
+            <img id="fullscreenImage" src="downloads/poster.jpg" alt="Календарь во весь экран" style="transform: scale(1); transition: transform 0.1s ease;">
+        </div>
+        
+        <!-- Панель управления зумом -->
+        <div class="zoom-controls">
+            <button onclick="zoomOut()">−</button>
+            <span id="zoomLevel">100%</span>
+            <button onclick="zoomIn()">+</button>
+            <button onclick="resetZoom()" style="width: auto; border-radius: 20px; padding: 0 15px;">Сброс</button>
+        </div>
+    </div>
+
+    <script>
+        let currentZoom = 1;
+        const zoomStep = 0.1;
+        const minZoom = 0.5;
+        const maxZoom = 3;
+        
+        function updateZoom() {
+            const img = document.getElementById('fullscreenImage');
+            img.style.transform = `scale(${currentZoom})`;
+            document.getElementById('zoomLevel').innerText = Math.round(currentZoom * 100) + '%';
+        }
+        
+        function zoomIn() {
+            if (currentZoom < maxZoom) {
+                currentZoom += zoomStep;
+                updateZoom();
+            }
+        }
+        
+        function zoomOut() {
+            if (currentZoom > minZoom) {
+                currentZoom -= zoomStep;
+                updateZoom();
+            }
+        }
+        
+        function resetZoom() {
+            currentZoom = 1;
+            updateZoom();
+        }
+        
+        function openFullscreen() {
+            resetZoom(); // сбрасываем зум при открытии
+            document.getElementById('fullscreenModal').style.display = 'flex';
+        }
+        
+        function closeFullscreen() {
+            document.getElementById('fullscreenModal').style.display = 'none';
+        }
+        
+        function closeFullscreenOnBackground(event) {
+            if (event.target === document.getElementById('fullscreenModal')) {
+                closeFullscreen();
+            }
+        }
+        
+        // Закрытие по Escape
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeFullscreen();
+            }
+        });
+        
+        // Зум колёсиком мыши
+        document.getElementById('fullscreenModal').addEventListener('wheel', function(e) {
+            if (document.getElementById('fullscreenModal').style.display === 'flex') {
+                e.preventDefault();
+                if (e.deltaY < 0) {
+                    zoomIn();
+                } else {
+                    zoomOut();
+                }
+            }
+        }, { passive: false });
+    </script>
 </body>
 </html>
